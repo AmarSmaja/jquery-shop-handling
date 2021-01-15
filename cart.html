@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.shop.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <div class="site">
+        <header class="masthead">
+            <h1>Winery <span class="tagline">Wines for web developers since 1999</span></h1>
+        </header>
+        <div class="content">
+            <h1>Your Shopping Cart</h1>
+            <form action="cart.html" class="shopping-cart" method="POST">
+                <table class="shopping-cart">
+                    <thead>
+                        <tr>
+                            <th scope="col">Item</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col" colspan="2">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <p class="sub-total">
+                    <strong>Sub Total</strong>: <span id="stotal"></span>
+                </p>
+                <ul class="shopping-cart-actions">
+                    <li>
+                        <input type="submit" name="update" id="update-cart" class="btn" value="Update Cart">
+                    </li>
+                    <li>
+                        <input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart">
+                    </li>
+                    <li>
+                        <a href="index.html" class="btn">Continue Shopping</a>
+                    </li>
+                    <li>
+                        <a href="checkout.html" class="btn">Go To Checkout</a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
